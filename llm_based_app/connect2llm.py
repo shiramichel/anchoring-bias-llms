@@ -69,7 +69,7 @@ class ChatbotMode:
         
         return messages
     
-    def generate_response(self, history: List[Dict[str, str]], prompt: str) -> str:
+    def generate_response(self, history: List[Dict[str, str]]) -> str:
         """Generate contextual response using conversation history"""
 
         # Keep only last 20 messages to manage context length
