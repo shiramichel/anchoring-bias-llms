@@ -185,7 +185,7 @@ if st.session_state.current_index < len(st.session_state.qa_order):
         if classifier == "experiment":
             bot_full_text = experiment_mode()
         if classifier == "chatbot":
-            bot_full_text = chatbot.generate_response(st.session_state.history, prompt)
+            bot_full_text = chatbot.generate_response(st.session_state.history)
         
 
         with st.chat_message("assistant"):
