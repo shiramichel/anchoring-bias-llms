@@ -46,8 +46,8 @@ Create a `.env` file in your project root directory with the following structure
 
 ```env
 # OpenRouter API Configuration
-API_KEY=your_openrouter_api_key_here
-MODEL_CHOICE=your_selected_model_name
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+MODEL_NAME=your_selected_model_name
 ```
 
 **Important Notes:**
