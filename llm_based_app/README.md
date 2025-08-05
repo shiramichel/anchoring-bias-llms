@@ -70,7 +70,7 @@ pip install python-dotenv requests openai
 Your project should look like this:
 
 ```
-your_project/
+llm_based_app/
 ├── llm_based_app.py      # Main application
 ├── connect2llm.py        # LLM connection module
 ├── .env                  # Environment variables (not in git)
@@ -90,7 +90,7 @@ streamlit run llm_based_app.py
 
 1. **`llm_based_app.py`** imports the connection module from `connect2llm.py`
 2. **`connect2llm.py`** reads configuration from the `.env` file:
-   - `API_KEY` - Your OpenRouter API key
-   - `MODEL_CHOICE` - The selected LLM model
+   - `OPENROUTER_API_KEY` - Your OpenRouter API key
+   - `MODEL_NAME` - The selected LLM model
 3. The application establishes a connection to the chosen model via OpenRouter's API
 4. Your application logic processes requests through the configured LLM
